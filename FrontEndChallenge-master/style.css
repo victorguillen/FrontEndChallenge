@@ -1,0 +1,120 @@
+/* Changed indentation to fit within 80 characters */
+body{font-family: "Arial";  opacity: 0.3;}
+a{text-decoration: none;}
+
+.product-container{
+  width:300px;
+  border:1px solid #aaa;
+  margin:10px;
+  display:inline-block;
+}
+.product-container img{
+  width:100%;
+  height:auto;
+  transition:0.5s ease;
+}
+/*
+Added hover effect to the product container,
+changing the opacity of the image and the description
+*/
+.product-container:hover img{
+  opacity:0.3;
+}
+.product-container:hover .description{
+  opacity:1
+}
+.product-container:hover .button{
+  opacity:1
+}
+.product-container:hover .product-title{
+  color:#0096FF;
+}
+/*
+Added position relative to the image to
+position the X button on the top right
+*/
+.image-container{
+  width:100%;
+  height:auto;
+  position:relative;
+}
+.row{
+  width:946px;
+  margin-left:
+  auto;
+  margin-right:
+  auto;
+}
+/*
+Took this out and added a div with col sm, md, and lg
+in the product.template.html
+*/
+
+/*.col1{float:left;}
+.col2{margin:10px auto;}
+.col3{float:right;}*/
+
+/* changed the name of the classes to make them more specific*/
+.page-title{
+  font-size:36;
+  text-align:center;
+}
+.page-tagline{
+  font-size:18;
+  text-align:center;
+  margin-bottom:20px;
+}
+.product-title{
+  font-size:16px;
+}
+.product-tagline{
+  font-size:16px;
+}
+.product-info-container{
+  padding:10px;
+  color:black;
+}
+/*
+Added a button and a description class, gave position absolute
+(to .imgage-container) and added transition and opacity effects
+*/
+.button{
+  font-size:20;
+  border-width:0;
+  background-color:transparent;
+  opacity:0; transition:0.5s ease;
+  transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  position:absolute;
+  top:30;
+  left:310;
+}
+.description{
+  width:100%;
+  height:auto;
+  padding:5px;
+  color:black;
+  font-size: 11px;
+  opacity:0;
+  transition:0.5s ease;
+  transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  position:absolute;
+  top:50%;
+  left:50%;
+}
+.loading-img{
+  width: 400px;
+  height: 400px;
+}
+/* Made the bodycontainer position absolute to
+position the loading gif in the middle
+*/
+#bodycontainer{
+  position: relative;
+}
+.loading-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,19 @@
+<div class="col-sm-4 col-lg-4 col-md-4" id="id" > <!-- added a div with sm, md and lg for tablets desktops and larger desktops -->
+  <div class="product-container">
+    <a href="{url}">
+      <div class="image-container">
+        <img src="{image}">
+        <div class="description">{description}</div> <!-- added a div for the product description -->
+      </div>
+      <div class="product-info-container">
+        <div class="product-title">{title}</div>
+        <div class="product-tagline">{tagline}</div>
+      </div>
+    </a>
+    <input type="button" value=&#10006 onclick="removeitem();" class="button" /> <!-- added a botton to remove products -->
+  </div>
+<!-- added this script to remove a product when the top right X button is clicked -->
+  <script>
+  removeitem = () => {document.getElementById("id").remove();}
+  </script>
+</div>
